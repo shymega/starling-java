@@ -1,0 +1,24 @@
+language: java
+os: linux
+dist: bionic
+
+jdk:
+  - openjdk8
+  - openjdk11
+
+script:
+  - "mvn test -B -Dmaven.javadoc.skip=false"
+  - "mvn site"
+
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+  irc:
+    channels:
+      - "chat.freenode.net#jstarling"
+    nick: jstarling-travis
+    on_success: always
+    on_failure: always
+    use_notice: true
+    skip_join: false
