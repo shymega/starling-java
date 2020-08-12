@@ -1,7 +1,7 @@
 j4Starling
 ==========
 
-Java library 4 (for) Starling Bank.
+A Java library 4 (for) Starling Bank.
 
 ## Disclaimer
 
